@@ -11,8 +11,7 @@ public class MyCartPage extends StartPage {
     }
 
     @FindBy(xpath = "(//h1[normalize-space()='Ihr Warenkorb'])[1]")
-    WebElement myCart;  // - если продукты есть в корзине
-
+    WebElement myCart;
     @FindBy(xpath = "(//h1[normalize-space()='Keine Artikel im Warenkorb'])[1]")
     WebElement noProductInCart;
 

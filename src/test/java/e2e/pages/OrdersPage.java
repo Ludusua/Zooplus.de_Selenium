@@ -13,7 +13,7 @@ public class OrdersPage extends StartPage {
     @FindBy(xpath = "//h2[normalize-space()='Alle Bestellungen']")
     WebElement allOrders;
 
-    public void waitForLoadingOrdersPage(){
+    public void waitForLoadingOrdersPage() {
         getWait().forVisibility(allOrders);
         Assert.assertTrue(allOrders.isDisplayed());
     }

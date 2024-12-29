@@ -27,7 +27,6 @@ public class PositiveLoginTest_001 extends TestBase {
         startPage.waitForLoadingStartPage();
         startPage.moveMouseToDropDownMyZoo();
         startPage.clickOnOneOfDropDownElement(myZoo);
-
         loginPage = new LoginPage(app.driver);
         loginPage.waitForLoadingLoginPage();
         loginPage.setDateLoginPage(email, password);

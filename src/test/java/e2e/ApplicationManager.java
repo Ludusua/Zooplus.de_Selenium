@@ -47,16 +47,8 @@ public class ApplicationManager {
             driver = new ChromeDriver(options);
         }
         driver.get(config.getProjectUrl());
-        driver.manage().window().maximize();//setSize(new Dimension(config.getWindowWeight(), config.getWindowHeight()));
+        driver.manage().window().maximize();
     }
 
-
-//    public void stop(boolean testPassed) {
-//        if (!testPassed) {
-//            byte[] screenshotData = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-//            Allure.addAttachment("Screenshot on failure", new ByteArrayInputStream(screenshotData));
-//        }
-//        driver.quit();
-//    }
 }
 

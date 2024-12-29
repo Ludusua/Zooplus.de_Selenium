@@ -13,12 +13,8 @@ public class WishListPage extends StartPage {
     @FindBy(xpath = "//h1[normalize-space()='Meine Wunschliste']")
     WebElement MyWishListTitle;
 
-    public void waitForLoadingWishListPage(){
+    public void waitForLoadingWishListPage() {
         getWait().forVisibility(MyWishListTitle);
         Assert.assertTrue(MyWishListTitle.isDisplayed());
     }
-
-
-
-
 }
