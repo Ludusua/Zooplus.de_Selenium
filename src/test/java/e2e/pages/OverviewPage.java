@@ -24,21 +24,14 @@ public class OverviewPage extends StartPage {
     WebElement mainNavBarOneOfNineElements;
     @FindBy(xpath = "//*[@class='LowerBar_categoryItemLink__HE2tM' and @href='/shop/katzen']")
     WebElement katzenfutterUndZubehoer;
-
-
     @FindBy(xpath = "//a[normalize-space()='Diätfutter']")
     WebElement dietFuetter;
-
-
     @FindBy(xpath = "//*[@class='CategoryFlyout_flyOutContainer__XqaBh']")
     WebElement mainContainer;
-
     @FindBy(xpath = "//h1[normalize-space()='Royal Canin Katzenfutter']")
     WebElement royalCanin;
-
     @FindBy(xpath = "//div[@class='App_lowerBarWrapper__UOF_u']//nav")
     WebElement container;
-
     @FindBy(xpath = "//*[@class='loy-bppo-bannerContainer__title']")
     WebElement titleOnBonusPage;
 

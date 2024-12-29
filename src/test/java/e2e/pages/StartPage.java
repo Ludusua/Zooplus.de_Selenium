@@ -34,21 +34,20 @@ public class StartPage extends BasePage {
         Assert.assertTrue(dropDownMeinZoo.isDisplayed());
     }
 
-    public void clickOnCookies(){
+    public void clickOnCookies() {
         getWait().forVisibility(cookies);
         cookies.click();
 
     }
 
     public void moveMouseToDropDownMyZoo() {
-        Actions actions = new Actions(driver);
-        actions.moveToElement(dropDownMeinZoo).perform();
+        moveMouseToElement(dropDownMeinZoo);
     }
 
     public void clickOnOneOfDropDownElement(String element) {
         List<WebElement> elements = driver.findElements(By.xpath("//*[@class='Flyout-module_flyoutVisible__u9qJE Flyout-module_flyout__qLvdx']//*[@class='Flyout-module_linkText__OZGD8']"));
         for (WebElement element1 : elements) {
-            if (element1.getText().equalsIgnoreCase(element)){
+            if (element1.getText().equalsIgnoreCase(element)) {
                 element1.click();
                 break;
             }
