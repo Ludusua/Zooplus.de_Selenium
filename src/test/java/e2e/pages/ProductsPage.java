@@ -45,7 +45,6 @@ public class ProductsPage extends BasePage {
                 System.out.println("No more pages, ending loop.");
                 break;
             }
-
             pageCount++;
         }
     }

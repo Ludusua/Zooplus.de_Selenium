@@ -61,10 +61,6 @@ public class LoginPage extends BasePage {
     public void waitForShortPasswordError(){
         getWait().forVisibility(shortPasswordFieldError);
     }
-//    public String getPrice(){
-//        String name=customerTitle.getText();
-//        return name;
-//    }
 
 
 }

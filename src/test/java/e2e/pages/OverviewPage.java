@@ -125,7 +125,6 @@ public class OverviewPage extends StartPage {
         WebElement ctg = driver.findElement(By.xpath("//*[@id='header-category-flyout'][" + category + "]//*[@class='CategoryFlyout_animalPanelGroup___E_yP'][" + column + "]//*[text()='" + element + "']"));
         getWait().forVisibility(ctg);
         ctg.click();
-
     }
 
 
